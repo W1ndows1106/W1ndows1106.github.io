@@ -1,18 +1,64 @@
----
-layout: default
----
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dfrdf4のramOS和PE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <!-- 如果你不需要标题或图标可以删掉它 -->
+      <h1><a href="#">dfrdf4のramOS</a></h1>
+    </li>
+      <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <section class="top-bar-section">
+    <ul class="left">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#screenshot">运行截图</a></li>
+      <li><a href="#download">下载</a></li>
+      <li><a href="#mouse">鼠鼠</a></li> 
+      <li><a href="#music">老好听了</a></li> 
+    </ul>
+  </section>
+</nav>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div style="padding:20px;">
+<div class="row">
+  <div class="medium-12 columns">
+    <div class="panel">
+      <h1>感谢FirPE，本RamOS基于FirPE修改。</h1>
+      <p>十分感谢🙇‍🙇🙇‍</p>
+    </div>
+  </div>
 </div>
+<h1 id=“screenshot" style="text-align:center">运行截图</h1>
+<img src="screenshot.jpg" height="800" width="1024" alt="scr001">
+<h1  style="text-align:center" id="download">下载<h1>
+                 <a style="align:center" herf="./RamOS.iso">4天后开放下载。 -dfrdf4 team</a>
+<h1 id=“mouse" style="text-align:center">鼠鼠</h1>
+  <p style="text-align:center">容我再拍几天</p>
+  <h1 id=“mouse" style="text-align:center">这些老好听了b（￣▽￣）d　</h1>
+  <iframe style="align:center" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2003298514&auto=1&height=66"></iframe><iframe style="align:center" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1985650983&auto=1&height=66"></iframe><iframe style="align:center" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=404848341&auto=1&height=66"></iframe>
+</div>
+
+<!-- 初始化 Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>
